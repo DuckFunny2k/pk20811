@@ -51,10 +51,10 @@
             <nav class="primary-menu">
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">feature</a></li>
-                <li><a href="#">service</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="service.html">service</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -69,7 +69,7 @@
         <img src="./assets/images/spa.png" alt="" />
       </div>
 
-      <div class="container">
+      <div class="container gradient-background">
         <div class="row">
           <div class="col-lg-6 col-md-9">
             <div class="banner-content">
@@ -80,7 +80,30 @@
                 darkness rule behold it created good saw after she'd Our set
                 living.
               </p>
-              <a href="#" class="btn">reserve now</a>
+
+              <div class="wrap-drop">
+                <div
+                  id="div1"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                >
+                  <a
+                    href="#"
+                    class="btn"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                    id="drag1"
+                    width="88"
+                    height="31"
+                    >reserve now</a
+                  >
+                </div>
+                <div
+                  id="div2"
+                  ondrop="drop(event)"
+                  ondragover="allowDrop(event)"
+                ></div>
+              </div>
 
               <div>
                 <a id="toggle-video-button" class="video-btn">
@@ -351,13 +374,7 @@
           <img src="./assets/images/appointment-img.jpg" alt="" />
         </figure>
         <div class="appointment-form">
-          <form
-            action="inc/apoint.php"
-            class="contact-form"
-            name="contactform"
-            method="post"
-            id="apoint-form"
-          >
+          <form class="contact-form" name="contactform" id="apoint-form">
             <div class="form-field half-width">
               <input
                 type="text"
@@ -401,7 +418,7 @@
                 id="comments"
               ></textarea>
             </div>
-            <button class="btn btn-round" id="asubmit">
+            <button class="btn btn-round" id="asubmit" onclick="xuLySubmit()">
               Make an Appointment
             </button>
             <div id="amessage"></div>
@@ -544,10 +561,10 @@
             <nav class="foo-nav">
               <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">feature</a></li>
-                <li><a href="#">service</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="/service.html">service</a></li>
+                <li><a href="./contact.html">Contact</a></li>
               </ul>
             </nav>
             <div class="foo-social">

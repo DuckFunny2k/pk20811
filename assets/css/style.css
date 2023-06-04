@@ -78,7 +78,19 @@ section {
   text-transform: uppercase;
   min-width: 170px;
   padding: 20px 15px;
+  cursor: move;
 }
+#div1,
+#div2 {
+  width: 180px;
+  height: 56px;
+  margin: 10px;
+}
+
+.wrap-drop {
+  display: flex;
+}
+
 .btn:hover {
   color: var(--btn-colorHover);
   background-color: var(--btn-color);
@@ -219,6 +231,9 @@ section {
 .banner {
   padding-top: 15%;
   position: relative;
+}
+.gradient-background {
+  background: linear-gradient(to bottom right, #ffffff, #f3b8b8);
 }
 #video-container {
   position: absolute;
